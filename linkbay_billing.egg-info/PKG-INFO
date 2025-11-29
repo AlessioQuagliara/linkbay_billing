@@ -1,3 +1,50 @@
+Metadata-Version: 2.4
+Name: linkbay-billing
+Version: 0.1.0
+Summary: Enterprise-grade invoicing and billing library for multi-tenant SaaS
+Author-email: Alessio Quagliara <alessio@linkbay.com>
+License: MIT
+Project-URL: Homepage, https://github.com/alessioquagliara/linkbay-billing
+Project-URL: Repository, https://github.com/alessioquagliara/linkbay-billing
+Project-URL: Documentation, https://github.com/alessioquagliara/linkbay-billing#readme
+Keywords: billing,invoicing,vat,e-invoice,fatturapa,peppol,multi-tenant,fiscal-compliance,taxation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: pdf
+Requires-Dist: jinja2>=3.0.0; extra == "pdf"
+Requires-Dist: weasyprint>=60.0; extra == "pdf"
+Provides-Extra: einvoice
+Requires-Dist: lxml>=4.9.0; extra == "einvoice"
+Provides-Extra: fastapi
+Requires-Dist: fastapi>=0.100.0; extra == "fastapi"
+Provides-Extra: all
+Requires-Dist: jinja2>=3.0.0; extra == "all"
+Requires-Dist: weasyprint>=60.0; extra == "all"
+Requires-Dist: lxml>=4.9.0; extra == "all"
+Requires-Dist: fastapi>=0.100.0; extra == "all"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Dynamic: license-file
+
 # LinkBay-Billing
 
 **Version**: 0.1.0
